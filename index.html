@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>E-Learning Page</title>
+	<link rel="icon" type="image/png" href="fa.png">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	
+	
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+</head>
+<body>
+	<header>
+		<center><h1>LEARNLY</h1></center>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="course.html">Courses</a></li>
+			<li><a href="Aboutus.html">About Us</a></li>
+			<li><a href="#learnly-footer">Contact Us</a></li>
+			<li><a href="https://docs.google.com/forms/d/e/1FAIpQLSe3r8ftaKSFTVrTObpX5TfHXU1g9IOHh7ZHkBBAFNkxFBIqPQ/viewform?usp=sf_link">Online Assestment</a></li>
+			<li><a href="dash.html">Dashboard</a></li>
+
+		</ul>
+		<div class="g-signin2" data-onsuccess="onSignIn"></div>
+	</nav>
+	<main>
+		<h2>Welcome to Our E-Learning Website</h2>
+
+		<p>Our website offers a wide range of online courses to help you improve your skills and advance your career.</p>
+		<img src="learnly.jpeg" alt="image"><br><br>
+		<a href="#" class="signup-btn">Sign Up Now</a><br><br>
+		<label for="myFile">Choose a file:</label>
+		<input type="file" id="myFile" name="filename">
+		<input type="submit">
+		<p style="color: brown;">Click on the "Choose File" button to upload a file.</p>
+		
+		<h2 id="aboutus">About Us</h2>
+		<p>We are a team of experienced educators dedicated to providing high-quality online courses to students all over the world.</p>
+		<!-- HTML -->
+		<center><p>Enter your queries here:</p>
+<div id="messages">
+	<ul>
+	  <!-- Messages will be inserted here dynamically -->
+	</ul>
+  </div>
+  
+  <form id="message-form">
+	<input type="text" id="message-input" placeholder="Type your message here...">
+	<button type="submit">Send</button><br>
+  </form>
+  </center>
+	</main>
+	<footer id="learnly-footer">
+		<p>© 2023 LEARNLY</p>
+		<label>Contact us: 5468-8756</label><br>  
+		<label>Email: xyz@gmail.com</label>
+	  </footer>
+	  
+		<script>
+		function onSignIn(googleUser) {
+		// Get the user's ID token and Google access token
+		var id_token = googleUser.getAuthResponse().id_token;
+		var access_token = googleUser.getAuthResponse().access_token;
+		// Send the ID token and access token to the server
+		// for verification and processing
+		// ...
+	}
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
